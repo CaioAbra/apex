@@ -10,7 +10,7 @@ section.dobra_2 {
 
     .card {
         background: linear-gradient(180deg, #131313, #000000);
-        padding: 2rem;
+        padding: 48px 32px;
         border-radius: 24px;
         border: none;
 
@@ -21,10 +21,12 @@ section.dobra_2 {
         .card-title {
             color: var(--white);
             margin-top: 1rem;
+            font-size: 26px;
         }
 
         .card-text {
             color: var(--gray);
+            font-size: 14px;
         }
 
         @media screen and (min-width:768px) {
