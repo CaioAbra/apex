@@ -143,16 +143,11 @@ section#hero-section .row {
   width: 100%;
 }
 section#hero-section h2 {
-  font-size: 40.72px;
+  font-size: 50px;
   font-weight: 700;
   line-height: 48.86px;
   text-align: left;
   color: var(--white);
-}
-@media screen and (min-width: 768px) {
-  section#hero-section h2 {
-    width: 510px;
-  }
 }
 section#hero-section p {
   font-size: 18.1px;
@@ -177,6 +172,70 @@ section#hero-section a.btn.acount {
 }
 section#hero-section a.btn.acount:hover {
   transform: scale(1.1);
+}
+
+section.dobra_2 {
+  margin-top: 3rem;
+}
+section.dobra_2 h2 {
+  color: var(--white);
+  margin-bottom: 3rem;
+  font-size: 40px;
+}
+section.dobra_2 .card {
+  background: linear-gradient(180deg, #131313, #000000);
+  padding: 2rem;
+  border-radius: 24px;
+  border: none;
+}
+section.dobra_2 .card .card-body {
+  padding: 0;
+}
+section.dobra_2 .card .card-title {
+  color: var(--white);
+  margin-top: 1rem;
+}
+section.dobra_2 .card .card-text {
+  color: var(--gray);
+}
+@media screen and (min-width: 768px) {
+  section.dobra_2 .card {
+    min-height: 330px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  section.dobra_2 .card {
+    min-height: 350px;
+  }
+}
+section.dobra_2 a.btn.acount {
+  color: var(--black);
+  border: 1px solid var(--white);
+  background: var(--green);
+  box-shadow: 0px 7px 48.92px 1px var(--green);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+  text-align: center;
+  border-radius: 7.24px;
+  padding: 16px 10px;
+  transition: all 0.5s ease;
+  width: 100%;
+}
+section.dobra_2 a.btn.acount:hover {
+  transform: scale(1.1);
+}
+
+section.dobra_3 {
+  margin-top: 5rem;
+  min-height: 902px;
+  background-image: url("./../../src/img/dobra_3/img_02.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section.dobra_3 h2 {
+  color: var(--white);
+  font-size: 40px;
 }
 
 * {
