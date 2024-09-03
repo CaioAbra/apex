@@ -229,13 +229,17 @@ section.dobra_2 a.btn.acount:hover {
 section.dobra_3 {
   margin-top: 5rem;
   min-height: 902px;
-  background-image: url("./../../src/img/dobra_3/img_02.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 section.dobra_3 h2 {
   color: var(--white);
   font-size: 40px;
+}
+@media screen and (min-width: 768px) {
+  section.dobra_3 h2 {
+    transform: translateY(5rem);
+    position: absolute;
+    z-index: 9999;
+  }
 }
 
 * {
