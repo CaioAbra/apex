@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --bg-body: #000000;
   --color-hamburger-bar: #3FD88F;
@@ -6,6 +7,7 @@
   --white: #FFFFFF;
   --black: #000000;
   --gray: #ABB2A5;
+  --accordin-bg:#131313;
 }
 
 header#header {
@@ -240,6 +242,62 @@ section.dobra_3 h2 {
     position: absolute;
     z-index: 9999;
   }
+}
+
+section.dobra_4 {
+  /* Rotaciona o ícone quando o corpo está aberto */
+}
+section.dobra_4 h2 {
+  color: var(--white);
+  margin-bottom: 3rem;
+  font-size: 40px;
+}
+section.dobra_4 .accordion {
+  width: 100%;
+}
+section.dobra_4 .accordion-item {
+  padding: 0px;
+  margin-bottom: 16px;
+  transition: 0.5s all ease;
+  border-radius: 16px;
+  background: var(--accordin-bg);
+}
+section.dobra_4 .accordion-header {
+  cursor: pointer;
+  padding: 1.25rem;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.2s;
+  margin-bottom: 0;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--white);
+}
+section.dobra_4 .accordion-header.open {
+  color: var(--white);
+}
+section.dobra_4 .accordion-header.open .icon {
+  transform: rotate(180deg);
+}
+section.dobra_4 .accordion-body {
+  padding: 0 1.25rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+  display: none;
+  color: var(--gray);
+  font-size: 0.9rem;
+}
+section.dobra_4 .accordion-body.open {
+  max-height: 28rem;
+  padding: 0 1.25rem 1.25rem 1.25rem;
+  display: block;
+}
+section.dobra_4 .icon {
+  font-weight: bold;
+  transition: transform 0.3s;
 }
 
 * {
