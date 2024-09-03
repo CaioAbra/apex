@@ -26,12 +26,17 @@ header#header {
                     display: flex;
                 }
 
+
                 span.bar {
                     height: 3px;
                     width: 25px;
-                    background: var(--color-hamburger-bar);
+                    background: var(--white);
                     margin: 4px 0;
                     transition: all 0.3s ease;
+                }
+
+                .bar:nth-child(1) {
+                    background: var(--green);
                 }
             }
 

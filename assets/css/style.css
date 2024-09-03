@@ -10,6 +10,32 @@
   --accordin-bg:#131313;
 }
 
+@font-face {
+  font-family: Epilogue-Bold;
+  src: url("./../fonts/Epilogue-Bold.ttf");
+}
+@font-face {
+  font-family: Epilogue-Regular;
+  src: url("./../fonts/Epilogue-Regular.ttf");
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Epilogue-Bold";
+}
+
+p,
+span,
+li,
+ul,
+.btn,
+a {
+  font-family: "Epilogue-Regular";
+}
+
 header#header {
   height: 87px;
 }
@@ -41,9 +67,12 @@ header#header nav.navbar .navbar-container button.hamburger {
 header#header nav.navbar .navbar-container button.hamburger span.bar {
   height: 3px;
   width: 25px;
-  background: var(--color-hamburger-bar);
+  background: var(--white);
   margin: 4px 0;
   transition: all 0.3s ease;
+}
+header#header nav.navbar .navbar-container button.hamburger .bar:nth-child(1) {
+  background: var(--green);
 }
 header#header nav.navbar .navbar-container .nav-menu {
   display: flex;
@@ -128,18 +157,27 @@ header#header nav.navbar.active {
 }
 section#hero-section {
   min-height: 100vh;
-  background: url("./../../src/img/dobra_1/img_hero.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+@media screen and (max-width: 1024px) {
+  section#hero-section {
+    background: url("./../../src/img/dobra_1/img_hero.webp");
+    background-position-x: 22rem;
+    background-position-y: -1rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 @media screen and (min-width: 1024px) {
   section#hero-section {
+    background: url("./../../src/img/dobra_1/img_hero.webp");
     background-position-x: 22rem;
     background-position-y: -1rem;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 section#hero-section .container {
-  padding-top: 4rem;
+  padding-top: 10%;
 }
 section#hero-section .row {
   width: 100%;
@@ -174,6 +212,20 @@ section#hero-section a.btn.acount {
 }
 section#hero-section a.btn.acount:hover {
   transform: scale(1.1);
+}
+@keyframes piscar {
+  0%, 100% {
+    opacity: 1;
+    r: 3.76074;
+  }
+  50% {
+    opacity: 0.3;
+    r: 6.24609;
+  }
+}
+section#hero-section .bolinha {
+  fill: var(--green);
+  animation: piscar 1s infinite;
 }
 
 section.dobra_2 {
