@@ -25,5 +25,10 @@ section.dobra_3 {
             position: absolute;
             z-index: 9999;
         }
+
+        @media screen and (max-width:500px) {
+            font-size: 28px;
+            line-height: 38px;
+        }
     }
 }

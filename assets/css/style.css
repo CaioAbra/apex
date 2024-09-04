@@ -228,6 +228,7 @@ section#hero-section h2 {
 @media screen and (max-width: 500px) {
   section#hero-section h2 {
     font-size: 32px;
+    line-height: 38px;
   }
 }
 section#hero-section p {
@@ -236,6 +237,11 @@ section#hero-section p {
   line-height: 29.08px;
   text-align: left;
   color: var(--gray);
+}
+@media screen and (min-width: 500px) {
+  section#hero-section p {
+    line-height: 20px;
+  }
 }
 section#hero-section a.btn.acount {
   color: var(--black);
@@ -318,6 +324,12 @@ section.dobra_2 h2 {
   margin-bottom: 3rem;
   font-size: 38px;
 }
+@media screen and (max-width: 500px) {
+  section.dobra_2 h2 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
 section.dobra_2 .card {
   background: linear-gradient(180deg, #131313, #000000);
   padding: 48px 32px;
@@ -394,6 +406,12 @@ section.dobra_3 h2 {
     z-index: 9999;
   }
 }
+@media screen and (max-width: 500px) {
+  section.dobra_3 h2 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
 
 section.dobra_4 {
   /* Rotaciona o ícone quando o corpo está aberto */
@@ -402,6 +420,12 @@ section.dobra_4 h2 {
   color: var(--white);
   margin-bottom: 3rem;
   font-size: 38px;
+}
+@media screen and (max-width: 500px) {
+  section.dobra_4 h2 {
+    font-size: 28px;
+    line-height: 38px;
+  }
 }
 section.dobra_4 .accordion {
   width: 100%;
