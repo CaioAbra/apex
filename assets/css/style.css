@@ -227,7 +227,7 @@ section#hero-section h2 {
 }
 @media screen and (max-width: 500px) {
   section#hero-section h2 {
-    font-size: 32px;
+    font-size: 36px;
     line-height: 38px;
   }
 }
