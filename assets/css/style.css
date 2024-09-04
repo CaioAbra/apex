@@ -261,6 +261,36 @@ section#hero-section .shadow-efect {
   animation: pulse 2s infinite;
   fill: #3FD88F;
 }
+section#hero-section .status-indicator {
+  display: flex;
+  align-items: center;
+  border: 2px solid #20c997;
+  color: #20c997;
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  width: 14rem;
+}
+section#hero-section .status-indicator .icon {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}
+section#hero-section .status-indicator .text {
+  margin-right: 8px;
+}
+section#hero-section .status-indicator .status-dot {
+  width: 12px;
+  height: 12px;
+  background-color: #20c997;
+  border-radius: 50%;
+}
+section#hero-section .status-indicator lottie-player {
+  width: 24px;
+  height: 24px;
+  margin-left: auto;
+}
 
 section.dobra_2 {
   margin-top: 3rem;
