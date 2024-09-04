@@ -225,6 +225,11 @@ section#hero-section h2 {
   text-align: left;
   color: var(--white);
 }
+@media screen and (max-width: 500px) {
+  section#hero-section h2 {
+    font-size: 42px;
+  }
+}
 section#hero-section p {
   font-size: 18.1px;
   font-weight: 400;
