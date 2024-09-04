@@ -39,7 +39,7 @@ section#hero-section {
 
 
         @media screen and (max-width:468px) {
-            padding-top: 50%;
+            padding-top: 68%;
         }
 
         @media screen and (min-width:468px) {
@@ -65,7 +65,7 @@ section#hero-section {
         color: var(--white);
 
         @media screen and (max-width:500px) {
-            font-size: 40px;
+            font-size: 49px;
         }
     }
 
@@ -180,7 +180,7 @@ section#hero-section {
         lottie-player {
             width: 24px;
             height: 24px;
-            margin-left: auto;
+            margin: auto;
         }
     }
 
