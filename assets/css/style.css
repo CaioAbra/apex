@@ -314,6 +314,7 @@ section#hero-section .status-indicator .status-dot {
 section#hero-section .status-indicator lottie-player {
   width: 24px;
   height: 24px;
+  margin: auto;
 }
 
 section.dobra_2 {
