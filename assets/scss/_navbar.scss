@@ -6,6 +6,10 @@ header#header {
         padding-top: 1.25rem;
         padding-bottom: 1.25rem;
 
+        .navbar-brand {
+            z-index: 9999;
+        }
+
         .navbar-container {
             display: flex;
             justify-content: space-between;
@@ -48,6 +52,7 @@ header#header {
                 @media screen and (max-width:768px) {
                     margin-top: 1rem;
                 }
+
                 @media screen and (min-width:1024px) {
                     margin-top: 0;
                 }
@@ -64,6 +69,17 @@ header#header {
                     border-style: solid;
                     border-width: 2.17px;
                     border-radius: 8.69px;
+
+                    @media screen and (max-width:768px) {
+                        // margin-left: auto;
+                        // margin-right: auto;
+                        // margin-bottom: 1rem;
+                        margin: 0 auto;
+
+                        &:nth-child(1) {
+                            margin-top: 6rem;
+                        }
+                    }
                 }
 
                 .btn-login {
@@ -100,25 +116,22 @@ header#header {
         display: flex;
         flex-direction: column;
         width: 100%;
-        position: absolute;
-        top: 50px;
+        height: 100vh; // Faz com que o menu ocupe toda a altura da tela
+        position: fixed; // Fixa a posição do menu para ocupar toda a tela
+        top: 0;
         left: 0;
         background: var(--bg-navbar-active);
         z-index: 5;
         opacity: 0;
-        max-height: 0;
-        overflow: hidden;
-        transition: all 0.5s ease;
+        transform: translateX(100%); // Move o menu para cima (fora da tela)
+        transition: transform 0.5s ease, opacity 0.5s ease;
         backdrop-filter: blur(10px);
         border-bottom: solid 2px var(--color-accordion-header-open);
     }
 
     .nav-menu.active {
         opacity: 1;
-        max-height: 18.75rem;
-        padding-bottom: 2rem;
-        padding-top: 2rem;
-        margin-top: 1rem;
+        transform: translateX(0); // Move o menu para sua posição original, preenchendo a tela
     }
 
     .hamburger.active .bar:nth-child(1) {

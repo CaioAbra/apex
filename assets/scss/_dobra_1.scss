@@ -2,26 +2,26 @@ section#hero-section {
     min-height: 100vh;
 
     @media screen and (max-width:468px) {
-        background: url('./../../src/img/dobra_1/Group228.webp');
+        background: url('./../../src/img/dobra_1/bg_hero_mobile.webp');
         background-repeat: no-repeat;
-        background-size: cover;
-        background-position-y: 1rem;
+        background-size: contain;
+        background-position-y: 0rem;
         background-position-x: right;
     }
 
     @media screen and (min-width:468px) {
-        background: url('./../../src/img/dobra_1/Group228.webp');
+        background: url('./../../src/img/dobra_1/bg_hero_mobile.webp');
         background-repeat: no-repeat;
         background-size: contain;
-        background-position-y: 1rem;
+        background-position-y: 0rem;
         background-position-x: right;
     }
 
     @media screen and (min-width:768px) {
-        background: url('./../../src/img/dobra_1/Group228.webp');
+        background: url('./../../src/img/dobra_1/bg_hero_mobile.webp');
         background-repeat: no-repeat;
         background-size: contain;
-        background-position-y: 1rem;
+        background-position-y: 0rem;
         background-position-x: right;
     }
 
@@ -36,12 +36,25 @@ section#hero-section {
 
 
     .container {
-        padding-top: 10%;
+
+
+        @media screen and (max-width:468px) {
+            padding-top: 50%;
+        }
+
+        @media screen and (min-width:468px) {
+            padding-top: 25%;
+        }
+
+        @media screen and (min-width:768px) {
+            padding-top: 10%;
+        }
+
     }
 
-    .row {
-        width: 100%;
-    }
+    // .row {
+    //     width: 100%;
+    // }
 
     h2 {
         // font-family: Good Timing;
