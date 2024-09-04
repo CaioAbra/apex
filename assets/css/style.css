@@ -292,14 +292,11 @@ section#hero-section .status-indicator {
   border-radius: 50px;
   font-size: 16px;
   font-weight: bold;
-  width: 14rem;
+  width: 13rem;
 }
 section#hero-section .status-indicator .icon {
   display: flex;
   align-items: center;
-  margin-right: 8px;
-}
-section#hero-section .status-indicator .text {
   margin-right: 8px;
 }
 section#hero-section .status-indicator .status-dot {
@@ -311,7 +308,6 @@ section#hero-section .status-indicator .status-dot {
 section#hero-section .status-indicator lottie-player {
   width: 24px;
   height: 24px;
-  margin: auto;
 }
 
 section.dobra_2 {
