@@ -1,15 +1,26 @@
 section.dobra_3 {
     margin-top: 5rem;
     min-height: 902px;
-    // background-image: url("./../../src/img/dobra_3/img_02.webp");
-    // background-repeat: no-repeat;
-    // background-size: cover;
+
+    @media screen and (max-width:768px) {
+        min-height: 500px;
+    }
+
+    @media screen and (min-width:1024px) {
+        min-height: 902px;
+    }
 
     h2 {
         color: var(--white);
         font-size: 40px;
 
-        @media screen and (min-width:768px) {
+        @media screen and (max-width:768px) {
+            // transform: translateY(5rem);
+            // position: absolute;
+            z-index: 9999;
+        }
+
+        @media screen and (min-width:1024px) {
             transform: translateY(5rem);
             position: absolute;
             z-index: 9999;
