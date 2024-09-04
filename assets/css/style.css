@@ -396,6 +396,11 @@ footer {
   background-position-y: bottom;
   background-position-x: right;
 }
+@media screen and (min-width: 1440px) {
+  footer {
+    padding-top: 21rem;
+  }
+}
 
 footer p.direitos {
   color: var(--gray);

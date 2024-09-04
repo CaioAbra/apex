@@ -5,7 +5,10 @@ footer {
     background-size: cover;
     background-position-y: bottom;
     background-position-x: right;
-    // min-height: 751px;
+
+    @media screen and (min-width:1440px) {
+        padding-top: 21rem;
+    }
 
 }
 
