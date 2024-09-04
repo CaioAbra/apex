@@ -205,7 +205,7 @@ section#hero-section {
 }
 @media screen and (max-width: 468px) {
   section#hero-section .container {
-    padding-top: 68%;
+    padding-top: 62%;
   }
 }
 @media screen and (min-width: 468px) {
