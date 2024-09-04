@@ -395,6 +395,7 @@ footer {
   background-size: cover;
   background-position-y: bottom;
   background-position-x: right;
+  min-height: 751px;
 }
 
 footer p.direitos {
