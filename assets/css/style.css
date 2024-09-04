@@ -159,13 +159,31 @@ header#header nav.navbar.active {
 section#hero-section {
   min-height: 100vh;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 468px) {
   section#hero-section {
-    background: url("./../../src/img/dobra_1/img_hero.webp");
-    background-position-x: 22rem;
-    background-position-y: -1rem;
+    background: url("./../../src/img/dobra_1/Group228.webp");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-y: 1rem;
+    background-position-x: right;
+  }
+}
+@media screen and (min-width: 468px) {
+  section#hero-section {
+    background: url("./../../src/img/dobra_1/Group228.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 1rem;
+    background-position-x: right;
+  }
+}
+@media screen and (min-width: 768px) {
+  section#hero-section {
+    background: url("./../../src/img/dobra_1/Group228.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 1rem;
+    background-position-x: right;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -227,6 +245,21 @@ section#hero-section a.btn.acount:hover {
 section#hero-section .bolinha {
   fill: var(--green);
   animation: piscar 1s infinite;
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+}
+section#hero-section .shadow-efect {
+  animation: pulse 2s infinite;
+  fill: #3FD88F;
 }
 
 section.dobra_2 {
@@ -356,8 +389,12 @@ section.dobra_4 .icon {
 }
 
 footer {
+  background-image: url("./../../src/img/footer/img_footer.webp");
   background-repeat: no-repeat;
-  padding-top: 3rem;
+  padding-top: 12.5rem;
+  background-size: cover;
+  background-position-y: bottom;
+  background-position-x: right;
 }
 
 footer p.direitos {

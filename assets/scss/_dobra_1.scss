@@ -1,12 +1,28 @@
 section#hero-section {
     min-height: 100vh;
 
-    @media screen and (max-width:1024px) {
-        background: url('./../../src/img/dobra_1/img_hero.webp');
-        background-position-x: 22rem;
-        background-position-y: -1rem;
+    @media screen and (max-width:468px) {
+        background: url('./../../src/img/dobra_1/Group228.webp');
         background-repeat: no-repeat;
         background-size: cover;
+        background-position-y: 1rem;
+        background-position-x: right;
+    }
+
+    @media screen and (min-width:468px) {
+        background: url('./../../src/img/dobra_1/Group228.webp');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-y: 1rem;
+        background-position-x: right;
+    }
+
+    @media screen and (min-width:768px) {
+        background: url('./../../src/img/dobra_1/Group228.webp');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-y: 1rem;
+        background-position-x: right;
     }
 
     @media screen and (min-width:1024px) {
@@ -92,5 +108,31 @@ section#hero-section {
         fill: var(--green);
         animation: piscar 1s infinite;
     }
+
+
+    @keyframes pulse {
+        0% {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        50% {
+            box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+        }
+
+        100% {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    .shadow-efect {
+        animation: pulse 2s infinite;
+        fill: #3FD88F;
+    }
+
+
+
+    // .shadow-efect {
+    //     fill: #131313;
+    // }
 
 }
