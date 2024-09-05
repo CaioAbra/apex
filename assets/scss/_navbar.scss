@@ -86,6 +86,9 @@ header#header {
                     background: transparent;
                     border-color: none;
                     color: var(--green);
+                    border: 1px solid var(--white);
+                    width: 215.81px;
+
                 }
 
                 .btn-register {
@@ -94,7 +97,7 @@ header#header {
                     padding: 1.125rem 3rem;
                     opacity: 1;
                     color: var(--black);
-                    border: 1px solid var(--white);
+                    border: 1px solid var(--green);
                 }
             }
         }

@@ -44,3 +44,21 @@ $('.accordion-header').click(function () {
         });
     }
 });
+
+$(document).ready(function () {
+    function showLoading() {
+        $('#loadingModal').addClass('show');
+    }
+
+    function hideLoading() {
+        $('#loadingModal').removeClass('show');
+    }
+
+    // Exemplo de uso
+    showLoading();
+
+    // Simulando carregamento
+    setTimeout(function () {
+        hideLoading();
+    }, 3000); // 3 segundos de carregamento
+});

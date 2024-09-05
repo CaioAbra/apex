@@ -115,6 +115,8 @@ header#header nav.navbar .navbar-container .nav-menu .btn-login {
   background: transparent;
   border-color: none;
   color: var(--green);
+  border: 1px solid var(--white);
+  width: 215.81px;
 }
 header#header nav.navbar .navbar-container .nav-menu .btn-register {
   background: var(--green);
@@ -122,7 +124,7 @@ header#header nav.navbar .navbar-container .nav-menu .btn-register {
   padding: 1.125rem 3rem;
   opacity: 1;
   color: var(--black);
-  border: 1px solid var(--white);
+  border: 1px solid var(--green);
 }
 header#header nav.navbar.active {
   background: var(--bg-navbar-active);
@@ -245,7 +247,7 @@ section#hero-section p {
 }
 section#hero-section a.btn.acount {
   color: var(--black);
-  border: 1px solid var(--white);
+  border: 1px solid var(--green);
   background: var(--green);
   box-shadow: 0px 7px 48.92px 1px var(--green-shadow);
   font-size: 18px;
@@ -361,7 +363,7 @@ section.dobra_2 .card .card-text {
 }
 section.dobra_2 a.btn.acount {
   color: var(--black);
-  border: 1px solid var(--white);
+  border: 1px solid var(--green);
   background: var(--green);
   box-shadow: 0px 7px 48.92px 1px var(--green-shadow);
   font-size: 18px;
@@ -589,6 +591,30 @@ body {
     padding-left: 26px;
     padding-right: 26px;
   }
+}
+
+.loading-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.loading-modal img {
+  width: 80px;
+}
+
+.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 /*# sourceMappingURL=style.css.map */
