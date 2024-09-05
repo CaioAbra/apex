@@ -62,3 +62,21 @@ $(document).ready(function () {
         hideLoading();
     }, 3000); // 3 segundos de carregamento
 });
+
+
+$(document).ready(function () {
+    function generateRandomNumber() {
+        // Gera um número aleatório entre 90.000 e 100.000
+        return Math.floor(Math.random() * (100001 - 90000)) + 90000;
+    }
+
+    function updateRandomNumber() {
+        $('.random_number').text(generateRandomNumber().toLocaleString('pt-BR'));
+    }
+
+    // Atualiza o número ao carregar a página
+    updateRandomNumber();
+
+    // Atualiza o número a cada 2 segundos
+    setInterval(updateRandomNumber, 2000);
+});
