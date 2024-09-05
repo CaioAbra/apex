@@ -115,7 +115,7 @@ header#header nav.navbar .navbar-container .nav-menu .btn-login {
   background: transparent;
   border-color: none;
   color: var(--green);
-  border: 1px solid var(--white);
+  border: 1px solid var(--green);
   width: 215.81px;
 }
 header#header nav.navbar .navbar-container .nav-menu .btn-register {
