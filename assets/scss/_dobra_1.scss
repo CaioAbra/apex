@@ -39,7 +39,7 @@ section#hero-section {
 
 
         @media screen and (max-width:468px) {
-            padding-top: 28%;
+            padding-top: 80%;
         }
 
         @media screen and (min-width:468px) {
@@ -153,8 +153,8 @@ section#hero-section {
         display: flex;
         align-items: center;
         // background-color: #000;
-        border: 2px solid #20c997;
-        color: #20c997;
+        border: 2px solid #248936;
+        color: #248936;
         padding: 8px 16px;
         border-radius: 50px;
         font-size: 16px;
@@ -174,7 +174,7 @@ section#hero-section {
         .status-dot {
             width: 12px;
             height: 12px;
-            background-color: #20c997;
+            background-color: #248936;
             border-radius: 50%;
         }
 

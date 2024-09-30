@@ -1,9 +1,9 @@
 @charset "UTF-8";
 :root {
   --bg-body: #000000;
-  --color-hamburger-bar: #3FD88F;
-  --bg-navbar-active: #333;
-  --green: #3FD88F;
+  --color-hamburger-bar: #248936;
+  --bg-navbar-active: #1B1D29;
+  --green: #248936;
   --white: #FFFFFF;
   --black: #000000;
   --gray: #ABB2A5;
@@ -207,7 +207,7 @@ section#hero-section {
 }
 @media screen and (max-width: 468px) {
   section#hero-section .container {
-    padding-top: 28%;
+    padding-top: 80%;
   }
 }
 @media screen and (min-width: 468px) {
@@ -294,8 +294,8 @@ section#hero-section .shadow-efect {
 section#hero-section .status-indicator {
   display: flex;
   align-items: center;
-  border: 2px solid #20c997;
-  color: #20c997;
+  border: 2px solid #248936;
+  color: #248936;
   padding: 8px 16px;
   border-radius: 50px;
   font-size: 16px;
@@ -310,7 +310,7 @@ section#hero-section .status-indicator .icon {
 section#hero-section .status-indicator .status-dot {
   width: 12px;
   height: 12px;
-  background-color: #20c997;
+  background-color: #248936;
   border-radius: 50%;
 }
 section#hero-section .status-indicator lottie-player {
