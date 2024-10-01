@@ -2,13 +2,13 @@
 :root {
   --bg-body: #000000;
   --color-hamburger-bar: #248936;
-  --bg-navbar-active: #1B1D29;
+  --bg-navbar-active: linear-gradient(180deg, #1b1d29 0%, #000000 100%);
   --green: #248936;
   --white: #FFFFFF;
   --black: #000000;
   --gray: #ABB2A5;
   --accordin-bg: #131313;
-  --green-shadow: rgba(63, 216, 143, 0.5);
+  --green-shadow: rgba(36, 137, 54, .5);
 }
 
 @font-face {
@@ -19,13 +19,21 @@
   font-family: Epilogue-Regular;
   src: url("./../fonts/Epilogue-Regular.ttf");
 }
+@font-face {
+  font-family: Inter-Regular;
+  src: url("./../fonts/Inter_18pt-Regular.ttf");
+}
+@font-face {
+  font-family: Inter-Bold;
+  src: url("./../fonts/Inter_18pt-Bold.ttf");
+}
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Epilogue-Bold";
+  font-family: "Inter-Bold";
 }
 
 p,
@@ -34,7 +42,7 @@ li,
 ul,
 .btn,
 a {
-  font-family: "Epilogue-Regular";
+  font-family: "Inter-Regular";
 }
 
 header#header {

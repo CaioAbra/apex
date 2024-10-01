@@ -2,7 +2,9 @@
     --bg-body: #000000;
 
     --color-hamburger-bar: #248936; // Cor das barras do hamburger
-    --bg-navbar-active: #1B1D29; // Cor de fundo ativa da navbar
+    --bg-navbar-active: linear-gradient(180deg, #1b1d29 0%, #000000 100%);
+    ; // Cor de fundo ativa da navbar
+    // --bg-navbar-active: #1B1D29; // Cor de fundo ativa da navbar
 
 
     --green: #248936;
@@ -13,7 +15,7 @@
 
     --accordin-bg: #131313;
 
-    --green-shadow: rgba(63, 216, 143, 0.5); 
+    --green-shadow: rgba(36, 137, 54, .5);
     // --color-title-hero-section: rgba(255, 255, 255, 1);
     // --color-text-hero-section: rgba(230, 230, 230, 1);
 
