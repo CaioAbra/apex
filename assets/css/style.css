@@ -293,7 +293,13 @@ section#hero-section .status-indicator lottie-player {
   margin: auto;
 }
 section#hero-section img {
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 8px #152037;
+  border-radius: 14px;
+}
+@media screen and (min-width: 1024px) {
+  section#hero-section img {
+    border-radius: 20px;
+  }
 }
 
 section.dobra_2 {
