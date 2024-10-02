@@ -332,6 +332,11 @@ section#hero-section img.pc {
   box-shadow: 4px 4px 8px #152037;
   border-radius: 14px;
 }
+@media screen and (min-width: 768px) {
+  section#hero-section img.pc {
+    border-radius: 2rem;
+  }
+}
 @media screen and (min-width: 1024px) {
   section#hero-section img.pc {
     border-radius: 20px;
