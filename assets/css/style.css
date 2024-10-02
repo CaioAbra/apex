@@ -452,7 +452,6 @@ section.dobra_3 .imagem-container .fundo {
 @media screen and (max-width: 768px) {
   section.dobra_3 .imagem-container .fundo {
     max-width: none;
-    width: 40rem;
   }
 }
 section.dobra_3 .imagem-container .icons {
