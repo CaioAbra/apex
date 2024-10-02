@@ -1,9 +1,8 @@
-
-
 section.dobra_3 {
     position: relative;
     margin-top: 12rem;
     min-height: 902px;
+    overflow-x: hidden;
 
     @media screen and (max-width: 768px) {
         min-height: 500px;
@@ -28,8 +27,14 @@ section.dobra_3 {
         position: relative;
         padding-top: 36%;
 
+        @media screen and (max-width:768px) {
+            display: flex;
+            justify-content: center;
+        }
+
         @media screen and (min-width:768px) {
             padding-top: 10%;
+
         }
 
         @media screen and (min-width:1024px) {
@@ -44,13 +49,19 @@ section.dobra_3 {
         .fundo {
             width: 100%;
             height: auto;
+
+            @media screen and (max-width:768px) {
+                max-width: none;
+                width: 40rem;
+
+            }
         }
 
         .icons {
             position: absolute;
-            bottom: 13%;
-            right: 15%;
-            width: 26%;
+            bottom: 41%;
+            right: -4%;
+            width: 35%;
             height: auto;
             animation: flutuar 3s ease-in-out infinite;
 

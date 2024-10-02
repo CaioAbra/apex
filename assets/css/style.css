@@ -369,6 +369,7 @@ section.dobra_3 {
   position: relative;
   margin-top: 12rem;
   min-height: 902px;
+  overflow-x: hidden;
 }
 @media screen and (max-width: 768px) {
   section.dobra_3 {
@@ -389,6 +390,12 @@ section.dobra_3 .imagem-container {
   position: relative;
   padding-top: 36%;
 }
+@media screen and (max-width: 768px) {
+  section.dobra_3 .imagem-container {
+    display: flex;
+    justify-content: center;
+  }
+}
 @media screen and (min-width: 768px) {
   section.dobra_3 .imagem-container {
     padding-top: 10%;
@@ -398,11 +405,17 @@ section.dobra_3 .imagem-container .fundo {
   width: 100%;
   height: auto;
 }
+@media screen and (max-width: 768px) {
+  section.dobra_3 .imagem-container .fundo {
+    max-width: none;
+    width: 40rem;
+  }
+}
 section.dobra_3 .imagem-container .icons {
   position: absolute;
-  bottom: 13%;
-  right: 15%;
-  width: 26%;
+  bottom: 41%;
+  right: -4%;
+  width: 35%;
   height: auto;
   animation: flutuar 3s ease-in-out infinite;
 }
