@@ -301,6 +301,9 @@ section#hero-section img.pc {
     border-radius: 20px;
   }
 }
+section#hero-section lottie-player path {
+  fill: #248936 !important;
+}
 
 section.dobra_2 {
   margin-top: 12rem;
