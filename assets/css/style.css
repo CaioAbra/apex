@@ -182,7 +182,7 @@ section#hero-section {
 }
 @media screen and (max-width: 468px) {
   section#hero-section .container {
-    padding-top: 80%;
+    padding-top: 20%;
   }
 }
 @media screen and (min-width: 468px) {
@@ -291,6 +291,9 @@ section#hero-section .status-indicator lottie-player {
   width: 24px;
   height: 24px;
   margin: auto;
+}
+section#hero-section img {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 section.dobra_2 {
