@@ -292,18 +292,18 @@ section#hero-section .status-indicator lottie-player {
   height: 24px;
   margin: auto;
 }
-section#hero-section img {
+section#hero-section img.pc {
   box-shadow: 4px 4px 8px #152037;
   border-radius: 14px;
 }
 @media screen and (min-width: 1024px) {
-  section#hero-section img {
+  section#hero-section img.pc {
     border-radius: 20px;
   }
 }
 
 section.dobra_2 {
-  margin-top: 3rem;
+  margin-top: 12rem;
 }
 section.dobra_2 h2 {
   color: var(--white);
@@ -345,7 +345,7 @@ section.dobra_2 .card .card-text {
   }
 }
 section.dobra_2 a.btn.acount {
-  color: var(--black);
+  color: var(--white);
   border: 1px solid var(--green);
   background: var(--green);
   box-shadow: 0px 7px 48.92px 1px var(--green-shadow);
@@ -364,7 +364,7 @@ section.dobra_2 a.btn.acount:hover {
 
 section.dobra_3 {
   position: relative;
-  margin-top: 5rem;
+  margin-top: 12rem;
   min-height: 902px;
 }
 @media screen and (max-width: 768px) {
@@ -375,11 +375,6 @@ section.dobra_3 {
 section.dobra_3 h2 {
   color: var(--white);
   font-size: 38px;
-  position: absolute;
-  top: 5%;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 2;
 }
 @media screen and (max-width: 500px) {
   section.dobra_3 h2 {
@@ -389,21 +384,11 @@ section.dobra_3 h2 {
 }
 section.dobra_3 .imagem-container {
   position: relative;
-  padding-top: 100%;
+  padding-top: 36%;
 }
 @media screen and (min-width: 768px) {
   section.dobra_3 .imagem-container {
-    padding-top: 40%;
-  }
-}
-@media screen and (min-width: 1024px) {
-  section.dobra_3 .imagem-container {
-    padding-top: 35%;
-  }
-}
-@media screen and (min-width: 1366px) {
-  section.dobra_3 .imagem-container {
-    padding-top: 20%;
+    padding-top: 10%;
   }
 }
 section.dobra_3 .imagem-container .fundo {
@@ -420,14 +405,14 @@ section.dobra_3 .imagem-container .icons {
 }
 @media screen and (min-width: 768px) {
   section.dobra_3 .imagem-container .icons {
-    bottom: 27%;
+    bottom: 44%;
     right: 19%;
     width: 21%;
   }
 }
 @media screen and (min-width: 1024px) {
   section.dobra_3 .imagem-container .icons {
-    bottom: 28%;
+    bottom: 40%;
     right: 18%;
     width: 22%;
   }
@@ -449,6 +434,7 @@ section.dobra_3 .imagem-container .icons {
 }
 
 section.dobra_4 {
+  margin-top: 9rem;
   /* Rotaciona o ícone quando o corpo está aberto */
 }
 section.dobra_4 h2 {
