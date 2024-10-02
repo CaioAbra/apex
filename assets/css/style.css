@@ -420,13 +420,6 @@ section.dobra_3 .imagem-container .icons {
     width: 22%;
   }
 }
-@media screen and (min-width: 1366px) {
-  section.dobra_3 .imagem-container .icons {
-    bottom: 22rem;
-    right: 17rem;
-    width: 18rem;
-  }
-}
 @keyframes flutuar {
   0%, 100% {
     transform: translateY(0);
