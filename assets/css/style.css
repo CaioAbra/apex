@@ -196,6 +196,8 @@ section#hero-section .video-background {
   transform: translate(-50%, -50%);
   object-fit: cover;
   max-width: 100vw;
+  opacity: 0.1;
+  pointer-events: none;
 }
 @media screen and (max-width: 468px) {
   section#hero-section .container {
