@@ -1,13 +1,14 @@
 @charset "UTF-8";
 :root {
-  --bg-body: #000000;
+  --bg-body-hero: linear-gradient(180deg, #152037 0%, #0C101A 100%);
+  --bg-body: #0C101A;
   --color-hamburger-bar: #248936;
-  --bg-navbar-active: linear-gradient(180deg, #1b1d29 0%, #000000 100%);
+  --bg-navbar-active: linear-gradient(180deg, #152037 0%, #0C101A 100%);
   --green: #248936;
   --white: #FFFFFF;
   --black: #000000;
   --gray: #ABB2A5;
-  --accordin-bg: #131313;
+  --accordin-bg: linear-gradient(160deg, #0C101A 20%, #152037 100%);
   --green-shadow: rgba(36, 137, 54, .5);
 }
 
@@ -122,17 +123,18 @@ header#header nav.navbar .navbar-container .nav-menu a.btn {
 header#header nav.navbar .navbar-container .nav-menu .btn-login {
   background: transparent;
   border-color: none;
-  color: var(--green);
-  border: 1px solid var(--green);
+  color: var(--white);
   width: 215.81px;
+  text-transform: uppercase;
 }
 header#header nav.navbar .navbar-container .nav-menu .btn-register {
   background: var(--green);
   box-shadow: 0px 7px 48.92px 1px var(--green-shadow);
   padding: 1.125rem 3rem;
   opacity: 1;
-  color: var(--black);
+  color: var(--white);
   border: 1px solid var(--green);
+  text-transform: uppercase;
 }
 header#header nav.navbar.active {
   background: var(--bg-navbar-active);
@@ -176,42 +178,7 @@ header#header nav.navbar.active {
 }
 section#hero-section {
   min-height: 100vh;
-}
-@media screen and (max-width: 468px) {
-  section#hero-section {
-    background: url("./../../src/img/dobra_1/bg_hero_mobile.webp");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-y: 0rem;
-    background-position-x: right;
-  }
-}
-@media screen and (min-width: 468px) {
-  section#hero-section {
-    background: url("./../../src/img/dobra_1/bg_hero_mobile.webp");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-y: 0rem;
-    background-position-x: right;
-  }
-}
-@media screen and (min-width: 768px) {
-  section#hero-section {
-    background: url("./../../src/img/dobra_1/bg_hero_mobile.webp");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-y: 0rem;
-    background-position-x: right;
-  }
-}
-@media screen and (min-width: 1024px) {
-  section#hero-section {
-    background: url("./../../src/img/dobra_1/img_hero.webp");
-    background-position-x: 22rem;
-    background-position-y: -1rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
+  background: var(--bg-body-hero);
 }
 @media screen and (max-width: 468px) {
   section#hero-section .container {
@@ -246,7 +213,7 @@ section#hero-section p {
   font-weight: 400;
   line-height: 29.08px;
   text-align: left;
-  color: var(--gray);
+  color: #95A9C7;
 }
 @media screen and (min-width: 500px) {
   section#hero-section p {
@@ -302,7 +269,6 @@ section#hero-section .shadow-efect {
 section#hero-section .status-indicator {
   display: flex;
   align-items: center;
-  border: 2px solid #248936;
   color: #248936;
   padding: 8px 16px;
   border-radius: 50px;
@@ -342,7 +308,7 @@ section.dobra_2 h2 {
   }
 }
 section.dobra_2 .card {
-  background: linear-gradient(180deg, #131313, #000000);
+  background: linear-gradient(180deg, #162038, #0C101A);
   padding: 48px 32px;
   border-radius: 24px;
   border: none;
@@ -356,7 +322,7 @@ section.dobra_2 .card .card-title {
   font-size: 26px;
 }
 section.dobra_2 .card .card-text {
-  color: var(--gray);
+  color: #95A9C7;
   font-size: 14px;
 }
 @media screen and (min-width: 768px) {
@@ -388,6 +354,7 @@ section.dobra_2 a.btn.acount:hover {
 }
 
 section.dobra_3 {
+  position: relative;
   margin-top: 5rem;
   min-height: 902px;
 }
@@ -396,31 +363,79 @@ section.dobra_3 {
     min-height: 500px;
   }
 }
-@media screen and (min-width: 1024px) {
-  section.dobra_3 {
-    min-height: 902px;
-  }
-}
 section.dobra_3 h2 {
   color: var(--white);
   font-size: 38px;
-}
-@media screen and (max-width: 768px) {
-  section.dobra_3 h2 {
-    z-index: 9999;
-  }
-}
-@media screen and (min-width: 1024px) {
-  section.dobra_3 h2 {
-    transform: translateY(5rem);
-    position: absolute;
-    z-index: 9999;
-  }
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
 }
 @media screen and (max-width: 500px) {
   section.dobra_3 h2 {
     font-size: 28px;
     line-height: 38px;
+  }
+}
+section.dobra_3 .imagem-container {
+  position: relative;
+  padding-top: 100%;
+}
+@media screen and (min-width: 768px) {
+  section.dobra_3 .imagem-container {
+    padding-top: 40%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  section.dobra_3 .imagem-container {
+    padding-top: 35%;
+  }
+}
+@media screen and (min-width: 1366px) {
+  section.dobra_3 .imagem-container {
+    padding-top: 20%;
+  }
+}
+section.dobra_3 .imagem-container .fundo {
+  width: 100%;
+  height: auto;
+}
+section.dobra_3 .imagem-container .icons {
+  position: absolute;
+  bottom: 13%;
+  right: 15%;
+  width: 26%;
+  height: auto;
+  animation: flutuar 3s ease-in-out infinite;
+}
+@media screen and (min-width: 768px) {
+  section.dobra_3 .imagem-container .icons {
+    bottom: 27%;
+    right: 19%;
+    width: 21%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  section.dobra_3 .imagem-container .icons {
+    bottom: 28%;
+    right: 18%;
+    width: 22%;
+  }
+}
+@media screen and (min-width: 1366px) {
+  section.dobra_3 .imagem-container .icons {
+    bottom: 22rem;
+    right: 17rem;
+    width: 18rem;
+  }
+}
+@keyframes flutuar {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
   }
 }
 
@@ -473,7 +488,7 @@ section.dobra_4 .accordion-body {
   overflow: hidden;
   transition: max-height 0.5s ease, padding 0.5s ease;
   display: none;
-  color: var(--gray);
+  color: #95A9C7;
   font-size: 0.9rem;
 }
 section.dobra_4 .accordion-body.open {
@@ -487,12 +502,7 @@ section.dobra_4 .icon {
 }
 
 footer {
-  background-image: url("./../../src/img/footer/img_footer.webp");
-  background-repeat: no-repeat;
   padding-top: 12.5rem;
-  background-size: cover;
-  background-position-y: bottom;
-  background-position-x: right;
 }
 @media screen and (min-width: 1440px) {
   footer {
@@ -501,7 +511,7 @@ footer {
 }
 
 footer p.direitos {
-  color: var(--gray);
+  color: #95A9C7;
   font-size: 10px;
   margin-top: 1rem;
   line-height: 1rem;
@@ -523,13 +533,14 @@ footer ul {
 
 footer ul li {
   margin-bottom: 0.3rem;
+  border: none !important;
 }
 
 footer ul li a {
   font-size: 14px;
   text-decoration: none;
-  fill: var(--gray);
-  color: var(--gray);
+  fill: #95A9C7;
+  color: #95A9C7;
   transition: all 0.5s;
 }
 
@@ -565,14 +576,14 @@ footer ul li a.link-media-social {
 
 footer ul li a.link-media-social:hover {
   border-radius: 0.5rem;
-  color: var(--green) !important;
-  fill: var(--green);
+  color: var(--white) !important;
+  fill: var(--white);
 }
 
 footer .endPage {
   font-size: 14px;
   line-height: 24px;
-  color: var(--gray);
+  color: #95A9C7;
 }
 
 * {

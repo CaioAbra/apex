@@ -1,10 +1,10 @@
 footer {
-    background-image: url('./../../src/img/footer/img_footer.webp');
-    background-repeat: no-repeat;
+    // background-image: url('./../../src/img/footer/img_footer.webp');
+    // background-repeat: no-repeat;
     padding-top: 12.5rem;
-    background-size: cover;
-    background-position-y: bottom;
-    background-position-x: right;
+    // background-size: cover;
+    // background-position-y: bottom;
+    // background-position-x: right;
 
     @media screen and (min-width:1440px) {
         padding-top: 21rem;
@@ -13,7 +13,7 @@ footer {
 }
 
 footer p.direitos {
-    color: var(--gray);
+    color: #95A9C7;
     font-size: 10px;
     margin-top: 1rem;
     line-height: 1rem;
@@ -35,13 +35,14 @@ footer ul {
 
 footer ul li {
     margin-bottom: .3rem;
+    border: none !important;
 }
 
 footer ul li a {
     font-size: 14px;
     text-decoration: none;
-    fill: var(--gray);
-    color: var(--gray);
+    fill: #95A9C7;
+    color: #95A9C7;
     transition: all .5s;
 }
 
@@ -78,12 +79,12 @@ footer ul li a.link-media-social {
 footer ul li a.link-media-social:hover {
     // background: var(--color-accordion-header-open);
     border-radius: .5rem;
-    color: var(--green) !important;
-    fill: var(--green);
+    color: var(--white) !important;
+    fill: var(--white);
 }
 
 footer .endPage {
     font-size: 14px;
     line-height: 24px;
-    color: var(--gray);
+    color: #95A9C7;
 }
