@@ -340,7 +340,7 @@ section.dobra_2 {
 }
 @media screen and (min-width: 1024px) {
   section.dobra_2 {
-    margin-top: 12rem;
+    margin-top: 4rem;
   }
 }
 section.dobra_2 h2 {
@@ -402,9 +402,13 @@ section.dobra_2 a.btn.acount:hover {
 
 section.dobra_3 {
   position: relative;
-  margin-top: 12rem;
-  min-height: 902px;
   overflow-x: hidden;
+  margin-top: 6rem;
+}
+@media screen and (min-width: 1024px) {
+  section.dobra_3 {
+    margin-top: 6rem;
+  }
 }
 @media screen and (max-width: 768px) {
   section.dobra_3 {
@@ -478,8 +482,13 @@ section.dobra_3 .imagem-container .icons {
 }
 
 section.dobra_4 {
-  margin-top: 9rem;
+  margin-top: 6rem;
   /* Rotaciona o ícone quando o corpo está aberto */
+}
+@media screen and (min-width: 1024px) {
+  section.dobra_4 {
+    margin-top: 4rem;
+  }
 }
 section.dobra_4 h2 {
   color: var(--white);
@@ -541,7 +550,7 @@ section.dobra_4 .icon {
 }
 
 footer {
-  padding-top: 12.5rem;
+  padding-top: 8.5rem;
 }
 @media screen and (min-width: 1440px) {
   footer {

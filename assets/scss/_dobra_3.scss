@@ -1,8 +1,14 @@
 section.dobra_3 {
     position: relative;
-    margin-top: 12rem;
-    min-height: 902px;
+    // min-height: 902px;
     overflow-x: hidden;
+
+    margin-top: 6rem;
+
+    @media screen and (min-width:1024px) {
+        margin-top: 6rem;
+
+    }
 
     @media screen and (max-width: 768px) {
         min-height: 500px;
